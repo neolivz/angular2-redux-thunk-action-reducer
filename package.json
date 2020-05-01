@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -29,7 +31,8 @@
     "redux-thunk": "^2.2.0",
     "redux-thunk-action-reducer": "^0.2.1",
     "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@angular/cli": "1.0.2",
@@ -49,5 +52,6 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
     "typescript": "~2.2.0"
-  }
+  },
+  "snyk": true
 }
